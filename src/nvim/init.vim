@@ -33,6 +33,7 @@ Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tc50cal/vim-terminal'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -53,7 +54,9 @@ call wilder#set_option('renderer', wilder#popupmenu_renderer({
 	\ ],
 	\ }))
 
-:colorscheme gruvbox
+:colorscheme jellybeans
+
+let g:airline#extensions#tabline#enabled = 1
 
 function! ToggleMouse()
 	if &mouse == 'a'
