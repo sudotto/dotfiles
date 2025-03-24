@@ -1,0 +1,62 @@
+/*base background color*/
+@define-color bg_main rgba(21, 21, 21, 0.9);
+@define-color bg_main_tooltip rgba(21, 21, 21, 0.8);
+
+/*base background color of selections */
+@define-color bg_hover rgba(200, 200, 200, 0.3);
+/*base background color of active elements */
+@define-color bg_active rgba(100, 100, 100, 0.5);
+
+/*base border color*/
+@define-color border_main rgba(255, 255, 255, 0.2);
+
+/*text color for entries, views and content in general */
+@define-color content_main white;
+/*text color for entries that are unselected */
+@define-color content_inactive rgba(255, 255, 255, 0.25);
+
+* {
+	text-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	font-family: "Ubuntu";
+	font-weight: 600;
+	font-size: 12.7px;
+}
+
+#outer-box {
+  background:  @bg_main;
+  border-bottom: 1px solid @border_main;
+  color: @content_main;
+}
+
+#inner-box {
+  background:  @bg_main;
+  border-bottom: 1px solid @border_main;
+  color: @content_main;
+}
+
+#window {
+  background:  @bg_main;
+  border-bottom: 1px solid @border_main;
+  color: @content_main;
+}
+
+#input {
+	border-radius: 10px;
+	background-color: rgba(40,40,40,0.5);
+	color: rgb(200,200,200);
+}
+
+#scroll {
+	border-radius: 10px;
+	background-color: rgba(40,40,40,0.5);
+	color: rgb(200,200,200);
+}
+
+#entry:selected {
+	background-color: rgba(50,50,50,0.5);
+	color: rgb(200,200,200);
+}
+*/

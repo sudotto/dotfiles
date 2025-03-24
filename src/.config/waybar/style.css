@@ -1,7 +1,7 @@
 
 /*base background color*/
-@define-color bg_main rgba(25, 25, 25, 0.65);
-@define-color bg_main_tooltip rgba(0, 0, 0, 0.7);
+@define-color bg_main rgba(21, 21, 21, 0.9);
+@define-color bg_main_tooltip rgba(21, 21, 21, 0.8);
 
 
 /*base background color of selections */
@@ -19,19 +19,16 @@
 
 * {
 	text-shadow: none;
-	box-shadow: none;
-  border: none;
-  border-radius: 0;
-	font-family: "Segoe UI", "Ubuntu";
-  font-weight: 600;
-  font-size: 12.7px;
-	
-	
+	border: none;
+	border-radius: 0;
+	font-family: "Ubuntu";
+	font-weight: 600;
+	font-size: 12.7px;
 }
 
 window#waybar {
   background:  @bg_main;
-  border-top: 1px solid @border_main;
+  border-bottom: 1px solid @border_main;
   color: @content_main;
 }
 
@@ -89,7 +86,7 @@ tooltip label{
 }
 
 #taskbar button {
-	min-width: 130px;
+	min-width: 0px;
 	border-bottom: 3px solid rgba(255, 255, 255, 0.3);
 	margin-left: 2px;
 	margin-right: 2px;
