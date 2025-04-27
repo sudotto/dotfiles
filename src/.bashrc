@@ -12,5 +12,6 @@ alias iliketrains='sl'
 #alias rec='ffmpeg -video_size 1366x768 -framerate 60 -f x11grab -i :0.0 ~/Videos/output.mp4'
 alias rec='wf-recorder -c libx264rgb --g 0, 0 1366x768 -r 60 -D'
 export EDITOR=nvim
-PS1='\[\033[1m\](\[\033[32m\]\u@\h \[\033[0;34m\]\w\[\033[0;1m\])$ \[\033[0m\]'
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+PS1='\[\e[92m\]\u@\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\$ '
 cowsay -f otto "howdy :)" | lolcat
